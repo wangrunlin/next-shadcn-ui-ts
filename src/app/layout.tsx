@@ -5,6 +5,9 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import "./globals.css";
+import { ModeToggle } from "@/components/mode-toggle";
+import { TypographyP } from "@/components/typography";
+import Link from "next/link";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -35,6 +38,18 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <header className="sticky top-0 flex justify-between pt-8 px-48 border-collapse">
+            <nav className="space-x-8">
+              <Link href="/">
+                <span>Leo Wang</span>
+              </Link>
+              <Link href="/about">
+                <span>About</span>
+              </Link>
+            </nav>
+            <ModeToggle />
+          </header>
+
           {children}
         </ThemeProvider>
       </body>

@@ -1,6 +1,6 @@
 "use client";
 
-import { ModeToggle } from "@/components/mode-toggle";
+import { TypographyH1, TypographyP } from "@/components/typography";
 import { Button } from "@/components/ui/button";
 
 const clickHandler = () => {
@@ -9,18 +9,15 @@ const clickHandler = () => {
 
 export default function About() {
   return (
-    <>
-      <div>
-        <ModeToggle />
-      </div>
-      <h1>About</h1>
+    <main className="text-center p-32">
+      <TypographyH1>About</TypographyH1>
       <footer>
-        <p>about content</p>
+        <TypographyP>about content</TypographyP>
 
         <Button variant="outline" size="lg" onClick={clickHandler}>
           Click Me
         </Button>
       </footer>
-    </>
+    </main>
   );
 }
