@@ -8,6 +8,7 @@ import "./globals.css";
 import { ModeToggle } from "@/components/mode-toggle";
 import { TypographyP } from "@/components/typography";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -38,14 +39,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <header className="sticky top-0 flex justify-between pt-8 px-48 border-collapse">
+          <header className="top-0 flex justify-between items-center pt-8 px-8 lg:px-48 border-collapse">
             <nav className="space-x-8">
-              <Link href="/">
-                <span>Leo Wang</span>
-              </Link>
-              <Link href="/about">
-                <span>About</span>
-              </Link>
+              <Button variant="link" asChild>
+                <Link href="/">Leo Wang</Link>
+              </Button>
+              <Button variant="link" asChild>
+                <Link href="/about">About</Link>
+              </Button>
             </nav>
             <ModeToggle />
           </header>

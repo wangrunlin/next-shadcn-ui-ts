@@ -2,20 +2,21 @@
 
 import { TypographyH1, TypographyP } from "@/components/typography";
 import { Button } from "@/components/ui/button";
-
-const clickHandler = () => {
-  alert("clicked");
-};
+import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="text-center p-32">
+    <main className="text-center">
       <TypographyH1>About</TypographyH1>
       <footer>
-        <TypographyP>about content</TypographyP>
+        <TypographyP className="mb-8">about content</TypographyP>
 
-        <Button variant="outline" size="lg" onClick={clickHandler}>
-          Click Me
+        <Button asChild>
+          <Link href="https://github.com/wangrunlin">GitHub</Link>
+        </Button>
+
+        <Button variant="link" className="mt-8" size="lg" asChild>
+          <Link href="https://wangrunlin.com">Homepage</Link>
         </Button>
       </footer>
     </main>

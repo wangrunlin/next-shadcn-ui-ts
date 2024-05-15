@@ -22,6 +22,10 @@ export const TypographyH2: FC<TypographyProps> = ({ children }) => {
   );
 };
 
-export const TypographyP: FC<TypographyProps> = ({ children }) => {
-  return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>;
+export const TypographyP: FC<TypographyProps> = ({ children, className }) => {
+  return (
+    <p className={`leading-7 [&:not(:first-child)]:mt-6 ${className ?? ""}`}>
+      {children}
+    </p>
+  );
 };
