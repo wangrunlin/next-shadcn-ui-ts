@@ -6,7 +6,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import "./globals.css";
 import { ModeToggle } from "@/components/mode-toggle";
-import { TypographyP } from "@/components/typography";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
