@@ -8,6 +8,7 @@ import "./globals.css";
 import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Providers } from "@/components/providers";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -46,11 +47,14 @@ export default function RootLayout({
               <Button variant="link" asChild>
                 <Link href="/about">About</Link>
               </Button>
+              <Button variant="link" asChild>
+                <Link href="/jotai">Jotai</Link>
+              </Button>
             </nav>
             <ModeToggle />
           </header>
 
-          {children}
+          <Providers>{children}</Providers>
         </ThemeProvider>
       </body>
     </html>
