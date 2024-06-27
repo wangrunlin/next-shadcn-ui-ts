@@ -42,7 +42,7 @@ export default function RootLayout({
           <header className="top-0 flex justify-between items-center pt-8 px-8 lg:px-48 border-collapse">
             <nav className="space-x-8">
               <Button variant="link" asChild>
-                <Link href="/">Leo Wang</Link>
+                <Link href="/">Home</Link>
               </Button>
               <Button variant="link" asChild>
                 <Link href="/about">About</Link>
