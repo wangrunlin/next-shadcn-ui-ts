@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
+
 import { TypographyH1, TypographyP } from "@/components/typography";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function About() {
   return (

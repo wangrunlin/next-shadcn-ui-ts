@@ -1,14 +1,14 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
-
-import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/theme-provider";
-
-import "./globals.css";
-import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+
+import { ModeToggle } from "@/components/mode-toggle";
 import { Providers } from "@/components/providers";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],

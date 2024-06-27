@@ -1,10 +1,11 @@
 "use client";
 
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
-import { animeAtom, progressAtom } from "@/model";
+import Link from "next/link";
+
 import { TypographyH2 } from "@/components/typography";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { animeAtom, progressAtom } from "@/model";
 
 const AnimeList = () => {
   const anime = useAtomValue(animeAtom);
